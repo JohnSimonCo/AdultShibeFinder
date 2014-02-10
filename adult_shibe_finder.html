@@ -3,6 +3,7 @@
 <head>
 
 <script type='text/javascript' src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>Adult shibe finder</title>
 
@@ -28,39 +29,51 @@ function button_press() {
 	var doge_text = text_box.value;
 	
 	//Generating doge response array
-	var dogesponse = new Array();
-	dogesponse[0] = "wow so interesting";
-	dogesponse[1] = "very good message";
-	dogesponse[2] = "such response";
-	dogesponse[3] = "dont hate the doge, hate the game";
-	dogesponse[4] = "want 2 b president";
-	dogesponse[5] = "hail the doge";
-	dogesponse[6] = "shibe b much smart";
-	dogesponse[7] = "so super duper fly hoe";
-	dogesponse[8] = "just wow";
-	dogesponse[9] = "snoop doge would be dissapoint";
-	dogesponse[10] = "doge > cate";
-	dogesponse[11] = "very good response";
-	dogesponse[12] = "much interesting talking to you";
-	dogesponse[13] = "pls luv doge";
-	dogesponse[14] = "such webpage";
-	dogesponse[15] = "very good conversation";
-	dogesponse[16] = "wow";
-	dogesponse[17] = "woff";
-	dogesponse[18] = "im a doge, woff woof";
-	dogesponse[19] = "if our eyes aren't real then how can many mirrors be real";
-	dogesponse[20] = "many booty much hoe";
-	dogesponse[21] = "dis is santa, how can i many help?";
-	dogesponse[22] = "dogecoin #tothemoon naow";
-	dogesponse[23] = "adult shibe finder is looking for single shibes";
-	dogesponse[24] = "shibe b super duper fly";
-	dogesponse[25] = "let the shibe flow through you";
-	dogesponse[26] = "i see no god up here, only shibe";
-	dogesponse[27] = "that moment i swore we were shibe";
+	var dogesponse = [
+		"wow so interesting", 
+		"very good message", 
+		"such response", 
+		"dont hate the doge, hate the game", 
+		"want 2 b president", 
+		"hail the doge", 
+		"shibe b much smart", 
+		"so super duper fly hoe", 
+		"just wow", 
+		"snoop doge would be dissapoint", 
+		"doge > cate", 
+		"very good response", 
+		"much interesting talking to you",
+		"pls luv doge", 
+		"such webpage", 
+		"very good conversation", 
+		"wow", "woff", 
+		"im a doge, woff woof", 
+		"if our eyes aren't real then how can many mirrors be real", 
+		"many booty much hoe", "dis is santa, how can i many help?", 
+		"dogecoin #tothemoon naow", 
+		"adult shibe finder is looking for single shibes", 
+		"shibe b super duper fly", 
+		"let the shibe flow through you", 
+		"i see no god up here, only shibe", 
+		"that moment i swore we were shibe"
+	];
 	
+
 	//Setting up predefined answers
 	user_text = doge_text.toLowerCase();
 	
+	/*var matchText = function(text, answer) {
+		return function(userText) {
+			if(userText === text) return answer;
+		}
+	}
+
+	var responses = [
+		matchText('hi', 'hey')
+	];
+	shibe_response = responses[0](user_text);
+	if(response) break;*/
+
 	if (user_text == "hi") {
 		shibe_response = "hey";
 	} else if (user_text == "i love you") {
@@ -377,86 +390,6 @@ function init() {
 }
 
 </script>
-
-<style type="text/css">
-
-	body {
-		font-family:Arial, Helvetica, sans-serif;
-	}
-	
-	.container {
-		display:block;
-		margin:auto;
-		width:500px;
-	}
-	
-	.top_block {
-		height:22px;
-		background-color:#FF66FF;
-		width:500px;
-		font-style:italic;
-		font-weight:bold;
-		padding:8px;
-	}
-
-	.lvl2_container {
-		width:500px;
-	}
-
-	.align-right {
-		float:left;
-		width:50px;
-		text-align:right;
-	}
-	
-	.header {
-		float:left;
-		width:440px;
-	}
-	
-	.filler {
-		height:10px;
-	}
-	
-	img {
-		width:515px;
-	}
-	
-	#doge_chat {
-		padding:3px;
-		font-size:large;
-		border:6px solid silver;
-		height:230px;
-		width:497px;
-		color:#0011FF;
-		overflow:scroll;
-	}
-	
-	input {
-		width:400px;
-	}
-	
-	.input_holder {
-		width:400px;
-		float:left;
-	}
-	
-	.button_holder {
-		margin-left:10px;
-		width:90px;
-		float:left;
-	}
-	
-	button {
-		width:100px;
-		height:25px;
-	}
-	
-	#shibe_type {
-		color:#00CCFF
-}
-	
-</style>
 
 </head>
 

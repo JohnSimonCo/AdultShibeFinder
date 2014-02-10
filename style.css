@@ -1,0 +1,75 @@
+body {
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.container {
+	display:block;
+	margin:auto;
+	width:500px;
+}
+
+.top_block {
+	height:22px;
+	background-color:#FF66FF;
+	width:500px;
+	font-style:italic;
+	font-weight:bold;
+	padding:8px;
+}
+
+.lvl2_container {
+	width:500px;
+}
+
+.align-right {
+	float:left;
+	width:50px;
+	text-align:right;
+}
+
+.header {
+	float:left;
+	width:440px;
+}
+
+.filler {
+	height:10px;
+}
+
+img {
+	width:515px;
+}
+
+#doge_chat {
+	padding:3px;
+	font-size:large;
+	border:6px solid silver;
+	height:230px;
+	width:497px;
+	color:#0011FF;
+	overflow:scroll;
+}
+
+input {
+	width:400px;
+}
+
+.input_holder {
+	width:400px;
+	float:left;
+}
+
+.button_holder {
+	margin-left:10px;
+	width:90px;
+	float:left;
+}
+
+button {
+	width:100px;
+	height:25px;
+}
+
+#shibe_type {
+	color:#00CCFF
+}
